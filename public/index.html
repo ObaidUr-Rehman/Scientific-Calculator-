@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Scientific Calculator</h1>
+
+        <div class="calculator">
+            <input type="text" id="screen">
+            <table>
+                <tr>
+                    <td><button onclick="inverse()">x<sup>-1</sup></button></td>
+                    <td><button onclick="exponent()">e</button></td>
+                    <td><button onclick="factorial()">x!</button></td>
+                    <td><button onclick="getvalue('%')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="pow()">x<sup>2</sup></button></td>
+                    <td><button onclick="pow2()">x<sup>3</sup></button></td>
+                    <td><button onclick="log()">Ln</button></td>
+                    <td><button onclick="pi()">π</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="Cost()">Cos</button></td>
+                    <td><button onclick="Sint()">Sin</button></td>
+                    <td><button onclick="Tant()">Tan</button></td>
+                    <td><button onclick="sqrt()">√</button></td>
+                <tr>
+                    <td><button onclick="getvalue('(')">(</button></td>
+                    <td><button onclick="getvalue(')')">)</button></td>
+                    <td><button class="clear" onclick="remove()">⌦</button></td>
+                    <td><button class="clear" onclick="clearval()">C</button></td>
+                </tr>
+                <tr>
+                    <td><button class="shade" onclick="getvalue('8')">8</button></td>
+                    <td><button class="shade" onclick="getvalue('7')">7</button></td>
+                    <td><button class="shade" onclick="getvalue('9')">9</button></td>
+                    <td><button class="shade" onclick="getvalue('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="shade" onclick="getvalue('4')">4</button></td>
+                    <td><button class="shade" onclick="getvalue('5')">5</button></td>
+                    <td><button class="shade" onclick="getvalue('6')">6</button></td>
+                    <td><button class="shade" onclick="getvalue('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="shade" onclick="getvalue('1')">1</button></td>
+                    <td><button class="shade" onclick="getvalue('2')">2</button></td>
+                    <td><button class="shade" onclick="getvalue('3')">3</button></td>
+                    <td><button class="shade" onclick="getvalue('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="shade" onclick="getvalue('0')">0</button></td>
+                    <td><button class="shade" onclick="getvalue('.')">.</button></td>
+                    <td><button class="shade" onclick="getvalue('=')">=</button></td>
+                    <td><button class="shade" onclick="getvalue('+')">+</button></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h2>Design & Developed by <span style="color: rgb(32, 17, 17);">Obaid Ur Rehman</span></h2>
+    </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
